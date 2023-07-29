@@ -1,0 +1,260 @@
+:root {
+  --green: #A2CCB6;
+  --yellow: #FCEEB5;
+  --peach: #EE786E;
+  --off-white: #FFFFF4;
+  --skyblue: #a5d4e7;
+  --lavender: #dcc9f5;
+  --seashell: #FFF5EE;
+  --dark: #242836;
+}
+
+body {
+  background-color: var(--seashell);
+  font-family: Arial;
+  margin-top: 230px;
+  transition: 0.6s;
+}
+
+span {
+  display: block;
+  margin-top: -5px;
+}
+
+body.dark {
+  background-color: #242836;
+  transition: 0.6s;
+}
+
+header.dark{
+  background-color: #242836;
+  transition: 0.6s;
+  color: var(--seashell);
+}
+
+
+.mainlogo{
+  padding-left: 20px;
+  width: 70px;
+}
+
+.profile{
+  width: 20px;
+}
+
+.github, .contact{
+  text-decoration: none;
+  color: inherit;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+
+.keyboard {
+  width: 780px;
+  height: 262px;
+  margin: 0px auto;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  background: #000000;
+}
+
+.row {
+  margin-top: 2px;
+  overflow: hidden;
+}
+
+.key {
+  width: 50px;
+  height: 50px;
+  float: left;
+  cursor: pointer;
+  background-color: var(--off-white);
+  color: #000000;
+  line-height: 48px;
+  text-align: center;
+  margin-left: 2px;
+  border-radius: 4px;
+}
+
+.key__symbols {
+  line-height: 28px;
+  background-color: var(--yellow);
+}
+
+.key__delete {
+  width: 100px;
+  display: block;
+  align-items: center;
+  background-color: var(--peach);
+}
+
+.key__letters{
+  background-color: var(--skyblue);
+}
+
+
+.key__oneandhalf {
+  width: 75px;
+}
+
+.key__extra{
+  background-color: var(--lavender);
+}
+
+.key__esc {
+  background: var(--peach);
+}
+
+.key__enter {
+  width: 112px;
+}
+
+.key__caps {
+  width: 90px;
+}
+
+.key__shift-left {
+  width: 100px;
+}
+
+.key__spacebar {
+  width: 300px;
+}
+
+.key__bottom-funct {
+  width: 70px;
+}
+
+.key__arrow {
+  background: var(--green);
+}
+
+.up{
+  margin-top: 25%;
+  align-content: center;
+}
+
+.left{
+  margin-top: 25%;
+  align-content: center;
+}
+
+.down{
+  margin-top: 35%;
+  align-content: center;
+}
+
+.right{
+  margin-top: 5%;
+  align-content: center;
+}
+
+.win{
+  margin-top: 17%;
+  align-content: center;
+}
+
+.backspace{
+  margin-top: 5%;
+  align-content: center;
+}
+
+.feather {
+  margin-top: 10px;
+}
+
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 100;
+  transition: 0.6s;
+  color: var(--dark);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--seashell);
+  border-bottom-width: 0px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(220,220,220);
+}
+
+.left-section{
+  width: 170px;
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.middle-section{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  max-width: 1200px;
+  margin-left: 70px;
+  margin-right: 00px;
+  /* background-color: #A2CCB6; */
+}
+
+.right-section{
+  width:60px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-shrink: 0;
+  /* background-color: #ffc207; */
+
+}
+
+
+.radio-btn {
+  width: 38px;
+  height: 18px;
+  padding: 1px;
+  background-color: #242836;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.radio-btn .radio-inner {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  background-color: #ffc207;
+  border-radius: 50%;
+  transition: all 0.6s;
+}
+
+.radio-btn .radio-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 100%;
+  height: 100%;
+  background-color: #242836;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.6s;
+}
+
+
+.radio-inner.active {
+  transform: translateX(calc(16px - -4px));
+}
+
+
+.radio-btn .radio-inner.active::before {
+  left: -7px;
+  transform: scale(1);
+}

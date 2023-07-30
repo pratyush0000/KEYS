@@ -9,15 +9,19 @@
   --dark: #242836;
   --lightblue: #00badd;
   --purple: #755bb3;
+  --darkplaceholder: #12718a;
 }
 
 body {
+  display: flex;
+  justify-content: center;
   background-color: var(--seashell);
   /* font-family: 'IBM Plex Mono', monospace; */
   font-family: 'Tektur', cursive;
   /* font-family: 'Architects Daughter', cursive; */
+  /* font-family: 'Share Tech', sans-serif; */
   font-size: 25px;
-  margin-top: 395.64px;
+  margin-top: 150px;
   transition: 0.6s;
 }
 
@@ -105,6 +109,7 @@ header.dark {
   font-family: 'IBM Plex Mono', monospace;
   /* font-family: 'Tektur', cursive; */
   /* font-family: 'Architects Daughter', cursive; */
+  /* font-family: 'Share Tech', sans-serif; */
 }
 
 /* .key:hover{
@@ -207,6 +212,7 @@ header.dark {
   font-family: 'IBM Plex Mono', monospace;
   /* font-family: 'Tektur', cursive; */
   /* font-family: 'Architects Daughter', cursive; */
+  /* font-family: 'Share Tech', sans-serif; */
   position: fixed;
   top: 0;
   left: 0;
@@ -299,6 +305,80 @@ header.dark {
 }
 
 .dark .quote1{
+  color: var(--lightblue);
+  transition: 0.6s;
+}
+
+/* --------------------------------- */
+/* input box and lines above it*/
+
+.input-field {
+  width: 1338.48px;
+  height: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  /* font-family: 'IBM Plex Mono', monospace; */
+  /* font-family: 'Tektur', cursive; */
+  /* font-family: 'Architects Daughter', cursive; */
+  font-family: 'Share Tech', sans-serif;
+  font-size: 40px;
+  border: 2px solid var(--dark);
+  border-radius: 6px;
+  background-color: var(--seashell);
+  color: var(--dark);
+  text-align: left;
+  cursor: crosshair;
+  pointer-events: none;
+  transition: 0.6s;
+}
+
+
+.dark .input-field{
+  color: var(--lightblue);
+  border: 2px solid var(--lightblue);
+  background-color: var(--dark);
+  transition: 0.6s;
+}
+
+.dark .input-field::placeholder{
+  color: var(--darkplaceholder);
+  transition: 0.6s;
+}
+
+
+.line1,.line2,.line3,.line4,.line5{
+  /* font-family: 'IBM Plex Mono', monospace; */
+  /* font-family: 'Tektur', cursive; */
+  /* font-family: 'Architects Daughter', cursive; */
+  font-family: 'Share Tech', sans-serif;
+  color: var(--dark);
+  font-size: 40px;
+  transition: 0.6s;
+}
+
+.line1{
+  opacity: 100%;
+}
+
+.line2{
+  opacity: 75%;
+}
+
+.line3{
+  opacity: 50%;
+}
+
+.line4{
+  opacity: 25%;
+}
+
+.line5{
+  opacity: 10%;
+}
+
+
+.dark .line1,.dark .line2,.dark .line3,.dark .line4,.dark .line5{
   color: var(--lightblue);
   transition: 0.6s;
 }

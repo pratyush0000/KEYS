@@ -3,8 +3,6 @@ $(document).ready(function () {
       $(".radio-inner").toggleClass("active");
       $("body").toggleClass("dark");
       $("header").toggleClass("dark");
-      $("keyboard").toggleClass("dark");
-      
       
     });
 });

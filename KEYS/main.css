@@ -7,18 +7,23 @@
   --lavender: #dcc9f5;
   --seashell: #FFF5EE;
   --dark: #242836;
+  --lightblue: #00badd;
+  --purple: #755bb3;
 }
 
 body {
   background-color: var(--seashell);
-  font-family: Arial;
-  margin-top: 230px;
+  /* font-family: 'IBM Plex Mono', monospace; */
+  font-family: 'Tektur', cursive;
+  /* font-family: 'Architects Daughter', cursive; */
+  font-size: 25px;
+  margin-top: 395.64px;
   transition: 0.6s;
 }
 
 span {
   display: block;
-  margin-top: -5px;
+  margin-top: -8.58px;
 }
 
 body.dark {
@@ -26,81 +31,107 @@ body.dark {
   transition: 0.6s;
 }
 
-header.dark{
+header.dark {
   background-color: #242836;
   transition: 0.6s;
   color: var(--seashell);
 }
 
-
-.mainlogo{
-  padding-left: 20px;
-  width: 70px;
+/* -------------------------------- */
+/* logo change in dark mode */
+.mainlogo {
+  padding-left: 34px;
+  width: 140px;
 }
 
-.profile{
-  width: 20px;
+.mainlogo2 {
+  padding-left: 34px;
+  width: 140px;
+  display: none;
 }
 
-.github, .contact{
+.dark .mainlogo{
+  display: none;
+  transition: 0.6s;
+}
+
+.dark .mainlogo2{
+  display: block;
+  transition: 0.6s;
+}
+
+/* -------------------------------- */
+
+
+.profile {
+  width: 34.32px;
+}
+
+.github,
+.contact {
   text-decoration: none;
   color: inherit;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 34.32px;
+  margin-right: 34.32px;
 }
 
-
-
-
 .keyboard {
-  width: 780px;
-  height: 262px;
-  margin: 0px auto;
-  border: 3px solid #000000;
-  border-radius: 10px;
+  width: 1338.48px;
+  height: 449.11px;
+  margin: 0 auto;
+  border: 5.14px solid #000000;
+  border-radius: 17.16px;
   background: #000000;
 }
 
 .row {
-  margin-top: 2px;
+  margin-top: 3.43px;
   overflow: hidden;
 }
 
 .key {
-  width: 50px;
-  height: 50px;
+  width: 85.8px;
+  height: 85.8px;
   float: left;
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: crosshair;
   background-color: var(--off-white);
   color: #000000;
-  line-height: 48px;
+  line-height: 82.37px;
   text-align: center;
-  margin-left: 2px;
-  border-radius: 4px;
+  margin-left: 3.43px;
+  border-radius: 6.18px;
+
+  font-family: 'IBM Plex Mono', monospace;
+  /* font-family: 'Tektur', cursive; */
+  /* font-family: 'Architects Daughter', cursive; */
 }
 
+/* .key:hover{
+  background-color: #7699a7;
+} */
+
 .key__symbols {
-  line-height: 28px;
+  line-height: 48.05px;
   background-color: var(--yellow);
 }
 
 .key__delete {
-  width: 100px;
+  width: 171.6px;
   display: block;
   align-items: center;
   background-color: var(--peach);
 }
 
-.key__letters{
+.key__letters {
   background-color: var(--skyblue);
 }
 
-
 .key__oneandhalf {
-  width: 75px;
+  width: 128.7px;
 }
 
-.key__extra{
+.key__extra {
   background-color: var(--lavender);
 }
 
@@ -109,131 +140,125 @@ header.dark{
 }
 
 .key__enter {
-  width: 112px;
+  width: 192.19px;
 }
 
 .key__caps {
-  width: 90px;
+  width: 154.8px;
 }
 
 .key__shift-left {
-  width: 100px;
+  width: 171.6px;
 }
 
 .key__spacebar {
-  width: 300px;
+  width: 514.8px;
 }
 
 .key__bottom-funct {
-  width: 70px;
+  width: 119.52px;
 }
 
 .key__arrow {
   background: var(--green);
 }
 
-.up{
+.up {
   margin-top: 25%;
   align-content: center;
 }
 
-.left{
+.left {
+  margin-top: 40%;
+  align-content: center;
+}
+
+.down {
+  margin-top: 45%;
+  align-content: center;
+}
+
+.right {
   margin-top: 25%;
   align-content: center;
 }
 
-.down{
-  margin-top: 35%;
+.win {
+  width: 30px;
+  margin-top: 21%;
   align-content: center;
 }
 
-.right{
-  margin-top: 5%;
+.backspace {
+  width: 55px;
+  margin-top: 8.58%;
   align-content: center;
 }
 
-.win{
-  margin-top: 17%;
-  align-content: center;
-}
 
-.backspace{
-  margin-top: 5%;
-  align-content: center;
-}
-
-.feather {
-  margin-top: 10px;
-}
-
-.header{
-  height: 55px;
+.header {
+  height: 137.28px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   z-index: 100;
   transition: 0.6s;
   color: var(--dark);
+  font-family: 'IBM Plex Mono', monospace;
   /* font-family: 'Tektur', cursive; */
   /* font-family: 'Architects Daughter', cursive; */
-  font-family: 'IBM Plex Mono', monospace;
-
-
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  font-size: 28.6px;
   background-color: var(--seashell);
   border-bottom-width: 0px;
   border-bottom-style: solid;
-  border-bottom-color: rgb(220,220,220);
+  border-bottom-color: rgb(220, 220, 220);
 }
 
-.left-section{
-  width: 170px;
+.left-section {
+  width: 291.6px;
   display: flex;
   align-items: center;
-  /* background-color: red; */
 }
 
-.middle-section{
+.middle-section {
   flex: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: right;
-  max-width: 1200px;
-  margin-left: 70px;
-  margin-right: 00px;
-  /* background-color: #A2CCB6; */
+  max-width: 2068.8px;
+  margin-left: 119.52px;
+  margin-right: 0;
 }
 
-.right-section{
-  width:60px;
-  margin-right: 20px;
+.right-section {
+  width: 103.68px;
+  margin-right: 34.32px;
   display: flex;
   align-items: center;
   justify-content: right;
   flex-shrink: 0;
-  /* background-color: #ffc207; */
-
 }
 
-
 .radio-btn {
-  width: 38px;
-  height: 18px;
-  padding: 1px;
+  width: 65.28px;
+  height: 30.89px;
+  padding: 1.72px;
   background-color: #242836;
-  border-radius: 10px;
+  /* background-color: red; */
+  border-radius: 18.86px;
   overflow: hidden;
   cursor: pointer;
 }
 
 .radio-btn .radio-inner {
   position: relative;
-  width: 17px;
-  height: 17px;
+  width: 29.42px;
+  height: 29.42px;
   background-color: #ffc207;
   border-radius: 50%;
   transition: all 0.6s;
@@ -243,22 +268,39 @@ header.dark{
   content: "";
   position: absolute;
   top: 0;
-  left: -60%;
+  left: -100%;
   width: 100%;
   height: 100%;
+  /* background-color: #A2CCB6; */
   background-color: #242836;
   border-radius: 50%;
   transform: scale(0);
   transition: all 0.6s;
 }
 
-
 .radio-inner.active {
-  transform: translateX(calc(16px - -4px));
+  transform: translateX(calc(25.78px - -10px));
 }
-
 
 .radio-btn .radio-inner.active::before {
-  left: -7px;
+  left: -10px;
   transform: scale(1);
 }
+
+
+
+/* --------------------------------- */
+/* quote colour change dark mode */
+.quote1{
+  text-align: center;
+  /* color: var(--purple); */
+  color: var(--dark);
+  transition: 0.6s;
+}
+
+.dark .quote1{
+  color: var(--lightblue);
+  transition: 0.6s;
+}
+
+/* --------------------------------- */

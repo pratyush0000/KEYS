@@ -37,7 +37,7 @@ $(document).ready(function () {
       text2=line1.text();
       line2.text(text2);
       line1.text(text1);
-      text1 = "";
+      text1 = "\u00A0";
       inputField.val("");
       currentIndex = 0;
     } else if (key === "Backspace") {

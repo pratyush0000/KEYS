@@ -58,3 +58,35 @@ $(document).ready(function () {
     }
   });
 });
+
+
+
+
+document.addEventListener('keydown', function (event) {
+  // Get the key code of the pressed key
+  const keyCode = event.keyCode || event.which;
+
+  // Find the corresponding key with the data-key attribute matching the key code
+  const keyElement = document.querySelector(`.key[data-key="${keyCode}"]`);
+
+  // If the key exists, play the sound and add a class for visual feedback
+  if (keyElement) {
+    const audioElement = document.getElementById('keySound');
+    audioElement.currentTime = 0; // Rewind the sound to the beginning
+    audioElement.play();
+    keyElement.classList.add('active');
+  }
+});
+
+document.addEventListener('keyup', function (event) {
+  // Get the key code of the released key
+  const keyCode = event.keyCode || event.which;
+
+  // Find the corresponding key with the data-key attribute matching the key code
+  const keyElement = document.querySelector(`.key[data-key="${keyCode}"]`);
+
+  // If the key exists, remove the class added for visual feedback
+  if (keyElement) {
+    keyElement.classList.remove('active');
+  }
+});

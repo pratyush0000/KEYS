@@ -116,6 +116,12 @@ header.dark {
   /* font-family: 'Share Tech', sans-serif; */
 }
 
+.key.active {
+  background-color: black; /* Change to the color you want */
+  color: white; /* Change to the text color you want */
+}
+
+
 /* .key:hover{
   background-color: #7699a7;
 } */

@@ -1,10 +1,15 @@
 :root {
   --green: #A2CCB6;
+  --darkgreen: #7DA899;
   --yellow: #FCEEB5;
+  --darkyellow: #D0C89D;
   --peach: #EE786E;
+  --darkpeach: #B95145;
   --off-white: #FFFFF4;
   --skyblue: #a5d4e7;
+  --darkskyblue: #75AECF;
   --lavender: #dcc9f5;
+  --darklavender: #b8a3e1;
   --seashell: #FFF5EE;
   --dark: #242836;
   --lightblue: #00badd;
@@ -116,11 +121,6 @@ header.dark {
   /* font-family: 'Share Tech', sans-serif; */
 }
 
-.key.active {
-  background-color: black; /* Change to the color you want */
-  color: white; /* Change to the text color you want */
-}
-
 
 /* .key:hover{
   background-color: #7699a7;
@@ -130,6 +130,10 @@ header.dark {
   line-height: 48.05px;
   background-color: var(--yellow);
 }
+.key__symbols.active{
+  background-color: var(--darkyellow);
+}
+/* ----------------------------- */
 
 .key__delete {
   width: 171.6px;
@@ -138,9 +142,19 @@ header.dark {
   background-color: var(--peach);
 }
 
+.key__delete.active{
+  background-color: var(--darkpeach);
+}
+/* ----------------------------- */
+
 .key__letters {
   background-color: var(--skyblue);
 }
+
+.key__letters.active{
+  background-color: var(--darkskyblue);
+}
+/* ----------------------------- */
 
 .key__oneandhalf {
   width: 128.7px;
@@ -149,10 +163,19 @@ header.dark {
 .key__extra {
   background-color: var(--lavender);
 }
+.key__extra.active{
+  background-color: var(--darklavender);
+}
+/* ----------------------------- */
 
 .key__esc {
   background: var(--peach);
 }
+
+.key__esc.active{
+  background-color: var(--darkpeach);
+}
+/* ----------------------------- */
 
 .key__enter {
   width: 192.19px;
@@ -177,6 +200,10 @@ header.dark {
 .key__arrow {
   background: var(--green);
 }
+.key__arrow.active{
+  background-color: var(--darkgreen);
+}
+/* ----------------------------- */
 
 .up {
   margin-top: 25%;
